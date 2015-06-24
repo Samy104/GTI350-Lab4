@@ -1,0 +1,37 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".DownloadCoursesActivity" >
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="10dip"
+        android:hint="search"
+        android:inputType="textNoSuggestions|textVisiblePassword"
+        android:ems="10" >
+    </EditText>
+
+    <ScrollView
+        android:id="@+id/svDownloadableCourses"
+        android:layout_below="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+	        android:id="@+id/llDownloadableCourses"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" />
+	        
+    </ScrollView>
+
+</RelativeLayout>

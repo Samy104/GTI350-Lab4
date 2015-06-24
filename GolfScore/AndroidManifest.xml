@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gti350.golfscore"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="gti350.golfscore.activities.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="gti350.golfscore.activities.GameListActivity"
+            android:label="@string/title_activity_game_list"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="gti350.golfscore.activities.CourseChooserActivity"
+            android:label="@string/title_activity_course_chooser"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="gti350.golfscore.activities.AddPlayersActivity"
+            android:label="@string/title_activity_add_players"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="gti350.golfscore.activities.GameActivity"
+            android:label="@string/title_activity_current_game"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="gti350.golfscore.activities.CourseListActivity"
+            android:label="@string/title_activity_course_list"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="gti350.golfscore.activities.CreateEditCourseActivity"
+            android:label="@string/title_activity_create_edit_course"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="gti350.golfscore.activities.ViewCourseActivity"
+            android:label="@string/title_activity_view_course"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="gti350.golfscore.activities.DownloadCoursesActivity"
+            android:label="@string/title_activity_download_courses"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="gti350.golfscore.activities.StatisticsGlobalActivity"
+            android:label="@string/title_activity_statistics_global"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="gti350.golfscore.activities.StatisticsCourseActivity"
+            android:label="@string/title_activity_statistics_course"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="gti350.golfscore.activities.StatisticsGraphActivity"
+            android:label="@string/title_activity_statistics_graph"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="gti350.golfscore.activities.HoleQuickAccessActivity"
+            android:label="@string/title_activity_hole_quick_access"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="gti350.golfscore.activities.GameSummary9HoleActivity"
+            android:label="@string/title_activity_game_summary" >
+        </activity>
+        <activity
+            android:name="gti350.golfscore.activities.GameSummary18HoleActivity"
+            android:label="@string/title_activity_game_summary18_hole" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CourseListActivity" >
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/search"
+        android:drawablePadding="10dip"
+        android:inputType="textNoSuggestions|textVisiblePassword"
+        android:hint="search"
+        android:ems="10" />
+
+    <ScrollView
+        android:layout_above="@+id/lytBottomNav"
+        android:layout_below="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout
+	        android:id="@+id/llCourses"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:orientation="vertical" />
+	        
+    </ScrollView>
+    
+    <LinearLayout 
+        android:id="@+id/lytBottomNav"
+	    android:layout_alignParentBottom="true" 
+	    android:layout_centerHorizontal="true"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+
+        <Button 
+	        android:layout_height="wrap_content" 
+	        android:layout_width="wrap_content"
+	        android:layout_weight="10"
+	        android:id="@+id/btnCreateNewCourse"
+	        android:drawableTop="@drawable/plus"
+	        android:text="Create Course" />
+
+        <Button
+	        android:layout_height="wrap_content" 
+	        android:layout_width="wrap_content"
+	        android:layout_weight="10"
+	        android:id="@+id/btnDownloadCourse" 
+	        android:drawableTop="@drawable/download"
+	        android:text="Download Course" />
+    </LinearLayout>
+
+</RelativeLayout>
